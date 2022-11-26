@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swag</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img src="assets/logo.png" alt="">
+    </header>
+    <nav>
+        <a onclick="changeHome()" href="javascript:void(0)">Home</a>
+        <a onclick="changeProducts()" href="javascript:void(0)">Products</a>
+        <a onclick="change()" href="javascript:void(0)">Contact</a>
+    </nav>
+    <section>
+        <iframe id="myFrame" src="https://traplife.org/swag" width="1300" height="800"  frameborder="0"></iframe>
+    </section>
+    <aside></aside>
+
+    
+    <script>
+        function changeHome(){
+            document.getElementById("myFrame").src = "https://traplife.org/swag";
+        }
+
+        function changeProducts(){
+            
+            document.getElementById("myFrame").src = "products.html";
+        }
+    </script>
+</body>
+</html>
