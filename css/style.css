@@ -528,6 +528,11 @@ mark,
 .img-fluid {
   max-width: 100%;
   height: auto;
+  transition: all 1s ease;
+}
+
+.img-fluid:hover{
+  transform: scale(1.1);
 }
 
 .img-thumbnail {
